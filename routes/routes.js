@@ -9,5 +9,5 @@ module.exports = (app) => {
   app.post('/api/drivers', DriversController.create)
   // :id is wildcard that express will parse in the request
   app.put('/api/drivers/:id', DriversController.edit)
-  // app.delete('/api/drivers/:id', DriversController.delete)
+  app.delete('/api/drivers/:id', DriversController.delete)
 }
