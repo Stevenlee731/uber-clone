@@ -1,0 +1,25 @@
+{
+  "name": "uber-clone",
+  "version": "1.0.0",
+  "description": "Uber clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stevenlee731/uber-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stevenlee731/uber-clone/issues"
+  },
+  "homepage": "https://github.com/Stevenlee731/uber-clone#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.10.6"
+  }
+}
