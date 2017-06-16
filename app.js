@@ -5,7 +5,11 @@ const app = express() //takes in incoming http requests
 const bodyParser = require('body-parser')
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/uber-clone')
+// alternates between test environment and drevlopemnt
+if (process.env.NODE_ENV !== 'test') {
+  mongoose.connect('mongodb://localhost/uber-clone')
+}
+
 
 app.use(bodyParser.json())
 routes(app)
